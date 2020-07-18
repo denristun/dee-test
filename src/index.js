@@ -1,3 +1,3 @@
 import './scss/index.scss'
+import './swiper'
 
-console.log('working')

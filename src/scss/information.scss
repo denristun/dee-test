@@ -1,0 +1,25 @@
+/** @format */
+
+@import 'variables';
+@import 'mixins';
+
+.information {
+  & .information__image {
+    width: 100%;
+  }
+
+  & .information__text-block {
+    width: 100%;
+  }
+
+  & .information__download-btn{
+  @include btn-primary;
+   & .icon{
+       width:25px;
+       height: 100%;
+   }
+  }
+
+
+
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import "~normalize.css";
+
+@import 'future';
+@import 'information';
+@import 'questions';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 43px;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 28px;
+}

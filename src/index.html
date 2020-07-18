@@ -1,13 +1,148 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Dee Test</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app" class="container">
+      <h1>Dee Test</h1>
+      <main>
+        <div class="header"></div>
+        <div class="row">
+          <div class="future col-12">
+              <nav>
+                  <ul class="future__swiper-menu">
+                      <li><a href="#!">Будущее уже рядом</a></li>
+                      <li><a href="#!">Высокое качество</a></li>
+                      <li><a href="#!">Непросто дома</a></li>
+                  </ul>
+              </nav>
+            <div class="row">
+              <div class="col-2">
+                <div class="future__swiper-pagination-wrapper">
+                  <div class="swiper-prev">
+                    <img src="img/arrow_left.png" width="25" alt="Назад" />
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-next">
+                    <img src="img/arrow_left.png" width="25" alt="Вперёд" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide future__slide">
+
+                        <div class="future__slide__text-block">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, inventore.
+                        </div>
+                      <img
+                        class="future__slide__image"
+                        src="img/future.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="swiper-slide future__slide">
+                     
+                      <img
+                        class="future__slide__image"
+                        src="img/future.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="swiper-slide future__slide">
+                    
+                      <img
+                        class="future__slide__image"
+                        src="img/future.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="information">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="information__image" src="img/information.png" alt="Буклет">
+                    </div>
+                    <div class="col-6">
+                        <div class="information__text-block">
+                            <h1>Получите больше информации</h1>
+                            <p>
+                                Разным образом дальнейшее развитие различных форм деятельности играет важную роль
+                                в формировании дальнейших направлений развития. Сдругой стороны реализация 
+                                намеченных плановых заданий позволяеить значение дальнейших направлений развития.
+                            </p>
+
+                         <div class="information__download-btn">
+                             <div class="row">
+                                 <div class="col-10">Скачать каталог</div>
+                                 <div class="col-2">
+                                    <img class="icon" src="img/inbox.svg"  alt="image description">
+
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    
+<div class="row">
+    <div class="questions container">
+        <div class="row">
+            <div class="col-6">
+            <h1>Ещё остались вопросы?</h1>
+            <p>Наши специалисты проведут для вас консультацию и у вас не останется никаких возражений.</p>
+            <div class="questions__text-block">
+                <div class="col-md-6 col-lg-12 col-xl-10 d-lg-flex justify-content-md-between align-items-end flex-row" id="action">
+                    <div class="form-group">
+                        <label class="label" for="name">Имя</label>
+                        <input class="input" id="name" type="text"  placeholder="Николай">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="number">Номер</label>
+                        <input class="input" id="number" type="tel" oninput="checkForm('#action')" placeholder="7 (111) 111-11-11">
+                    </div>
+                    <button class="questions__btn" disabled="">Оставить заявку</button>
+                </div>
+            </div>
+
+            </div>
+            <div class="col-6">
+                <img class="questions__image" src="img/questions.png" alt="">
+            </div>
+        </div>
 
     </div>
-</body>
+</div>
+      </main>
+    </div>
+  </body>
 </html>
