@@ -2,75 +2,67 @@
 
 @import 'variables';
 @import 'mixins';
-
 .future {
-  & .swiper-container {
-    width: 1000px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-  }
-  & .future__slide__image{
-    width: 1000px;
-    float: right;
-  }
-  & .future__swiper-pagination-wrapper{
-      width: 300px;
-      height: 25px;
-      display: flex;
-      position: absolute;
-  bottom: 0;
-  left: 0;
-  }
-
-  & .swiper-prev{
-    width: 20px;
-  }
-
-  & .swiper-next{
-      width: 20px;
-  }
-  & .swiper-pagination{
-      display: contents;
-  }
-
-  & .future__swiper-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 720px;
-    margin: 0 auto;
-    list-style: none;
-
-      li {
-        width: 225px;
-        height: 50px;
-        transition: background-position-x 0.9s linear;
-        text-align: center;
-        &:active{
-            color: $primary-color;  
+    & .swiper-container {
+        width: 1000px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+    }
+    & .future__slide__image {
+        width: 1000px;
+        float: right;
+    }
+    & .future__swiper-pagination-wrapper {
+        width: 300px;
+        height: 25px;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    & .swiper-prev {
+        width: 20px;
+    }
+    & .swiper-next {
+        width: 20px;
+    }
+    & .swiper-pagination {
+        display: contents;
+    }
+    & .future__swiper-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 720px;
+        margin: 0 auto;
+        list-style: none;
+        li {
+            width: 225px;
+            height: 50px;
+            transition: background-position-x 0.9s linear;
+            text-align: center;
+            &:active {
+                color: $primary-color;
+            }
         }
-      }
-      a{
-        font-size: 22px;
-        color: #777;
-        text-decoration: none;
-        transition: all 0.45s;  
-        &:hover{
-            color: $primary-color;
+        a {
+            font-size: 22px;
+            color: #777;
+            text-decoration: none;
+            transition: all 0.45s;
+            &.active,
+            &:hover {
+                color: $primary-color;
+            }
         }
-      }
-  }
-
-
-  & .future__slide__text-block{
-    @include text-block(400px, 200px, absolute, 0, -200px);
-  
-  }
-
+    }
+    & .future__slide__text-block {
+        @include text-block(400px, 200px, absolute, 0, -200px);
+    }
 }
