@@ -1,3 +1,4 @@
-import './scss/index.scss'
-import './swiper'
+import './scss/index.scss';
+import './swiper';
+import './form';
 
