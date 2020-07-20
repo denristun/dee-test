@@ -4,22 +4,73 @@
 @import 'mixins';
 
 .information {
-  & .information__image {
+
+  border-top: $primary-color 2px solid;
+  box-sizing: border-box;
+  padding: 50px;
+  margin-top: 50px;
+
+
+  & .action-button__flex {
+    display: flex;  
+    justify-content: space-between;
+  }
+  
+  & .action-button__img {
+    display: inline-block;
+    padding: 15px;
+    background-color: $secondary-color;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  & .action-button__content {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-left: 45px;
+    padding-right: 35px;
+  }
+  
+  & .action-button {  
+    background-color: $primary-color;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 265px;
+    border-radius: 5px;
+    cursor: pointer;
+    & img{
+      width: 28px;
+    }
+  }
+  
+  & .action-button:hover {
+    background-color: $light-primary-color;
+
+    & img{
+      width: 28px;
+    }
+  }
+
+
+
+  .information__content {
+    font-size: 16px;
+  }
+  
+  .information__img {
+    & img {
     width: 100%;
   }
+    }
 
-  & .information__text-block {
-    width: 100%;
+
+    @media (max-width: 767px) {
+      & .information__content{
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
   }
-
-  & .information__download-btn{
-  @include btn-primary;
-   & .icon{
-       width:25px;
-       height: 100%;
-   }
-  }
-
-
-
-}

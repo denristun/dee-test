@@ -15,134 +15,181 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Dee Test</title>
   </head>
   <body>
-    <div id="app" class="container">
-      <h1>Dee Test</h1>
       <main>
-        <div class="header"></div>
-        <div class="row">
-          <div class="future col-12">
-              <nav>
-                  <ul class="future__swiper-menu">
-                      <li><a href="#!">Будущее уже рядом</a></li>
-                      <li><a href="#!">Высокое качество</a></li>
-                      <li><a href="#!">Непросто дома</a></li>
-                  </ul>
-              </nav>
-            <div class="row">
-              <div class="col-2">
-                <div class="future__swiper-pagination-wrapper">
-                  <div class="swiper-prev">
-                    <img src="img/arrow_left.png" width="25" alt="Назад" />
+        <section  class="future">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="future__text-block-wrapper">
+                    <div class="future__text-block"></div>
+                    <h1>
+                      <span>Будущее</span><br />
+                      уже рядом
+                    </h1>
+                    В жилом квартале "Центральный" реализована концепция нового города
+                    будущего. Это следующий уровень астраханского девелопмента &mdash;
+                    комплекс <strong>повышенной комфортности</strong>
                   </div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-next">
-                    <img src="img/arrow_left.png" width="25" alt="Вперёд" />
-                  </div>
+                  <nav>
+                    <ul class="future__menu d-flex float-right">
+                        <li id="link" slide="1" class="d-flex align-items-center active">
+                          Будущее уже рядом
+                        </li>
+                        <li id="link" slide="2" class="d-flex align-items-center">
+                          Высокое качество
+                        </li>
+                        <li id="link" slide="3" class="d-flex align-items-center">
+                          Не просто дома
+                        </li>
+                      </ul>
+                  </nav>
+             
                 </div>
               </div>
-              <div class="col-10">
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide future__slide">
-
-                        <div class="future__slide__text-block">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, inventore.
-                        </div>
-                      <img
-                        class="future__slide__image"
-                        src="img/future.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="swiper-slide future__slide">
-                     
-                      <img
-                        class="future__slide__image"
-                        src="img/future.png"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="swiper-slide future__slide">
-                    
-                      <img
-                        class="future__slide__image"
-                        src="img/future.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-            <div class="information">
-                <div class="row">
-                    <div class="col-6">
-                        <img class="information__image" src="img/information.png" alt="Буклет">
-                    </div>
-                    <div class="col-6">
-                        <div class="information__text-block">
-                            <h1>Получите больше информации</h1>
-                            <p>
-                                Разным образом дальнейшее развитие различных форм деятельности играет важную роль
-                                в формировании дальнейших направлений развития. Сдругой стороны реализация 
-                                намеченных плановых заданий позволяеить значение дальнейших направлений развития.
-                            </p>
-
-                         <div class="information__download-btn">
-                             <div class="row">
-                                 <div class="col-10">Скачать каталог</div>
-                                 <div class="col-2">
-                                    <img class="icon" src="img/inbox.svg"  alt="image description">
-
-                                 </div>
-                             </div>
-                         </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
       
-    
-<div class="row">
-    <div class="questions container">
-        <div class="row">
-            <div class="col-6">
-            <h1>Ещё остались вопросы?</h1>
-            <p>Наши специалисты проведут для вас консультацию и у вас не останется никаких возражений.</p>
-            <div class="questions__text-block">
-                <div class="col-md-6 col-lg-12 col-xl-10 d-lg-flex justify-content-md-between align-items-end flex-row" id="action">
-                    <div class="form-group">
-                        <label class="label" for="name">Имя</label>
-                        <input class="input" id="name" type="text"  placeholder="Николай">
-                    </div>
-                    <div class="form-group">
-                        <label class="label" for="number">Номер</label>
-                        <input class="input" id="number" type="tel" oninput="checkForm('#action')" placeholder="7 (111) 111-11-11">
-                    </div>
-                    <button class="questions__btn" disabled="">Оставить заявку</button>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="img/future.png"
+                      id="slide-img"
+                      alt="Будущее уже рядом"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/future.png"
+                      id="slide-img"
+                      alt="Высокое качество"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/future.png" id="slide-img" alt="Не просто дома" />
+                  </div>
                 </div>
+      
+                <div class="swiper-arrows">
+                  <div class="swiper-button-prev-custom">
+                    &larr;
+                  </div>
+      
+                  <div class="swiper-pagination-custom">
+                    <div class="swiper-pagination"></div>
+                  </div>
+      
+                  <div class="swiper-button-next-custom">
+                    &rarr;
+                  </div>
+                </div>
+              </div>
             </div>
+      
+            <div class="row mr-0">
+              <div class="col mt-5">
+                <div class="future__additional">
+                  <div class="future__text-block"></div>
+                  <h1>
+                    <span>Будущее</span><br />
+                    уже рядом
+                  </h1>
+                  В жилом квартале "Центральный" реализована концепция нового города
+                  будущего. Это следующий уровень астраханского девелопмента &mdash;
+                  комплекс <strong>повышенной комфортности</strong>
+                </div>
+              </div>
+            </div>
+          </section>
 
+          <section class="information">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 mb-5 information__img d-flex align-items-center">
+                  <img src="img/information.png" alt="Получите больше информации" />
+                </div>
+                <div class="col-md-6 mb-5 d-flex align-items-center">
+                  <div class="information__content">
+                    <h1>Получите <span>больше</span> информации</h1>
+                    Равным образом дальнейшее развитие различных форм деятельности
+                    играет важную роль в формировании дальнейших направлений развития.
+                    С другой стороны реализация намеченных плановых заданий позволяет
+                    оценить значение дальнейших направлений развития.
+      
+                    <div class="information__action-bar mt-5">
+                      <div class="action-button">
+                        <div class="action-button__flex">
+                          <div class="action-button__content">
+                            Скачать каталог
+                          </div>
+                          <div class="action-button__img">
+                            <img src="./img/inbox.svg" alt="Скачать каталог" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-                <img class="questions__image" src="img/questions.png" alt="">
-            </div>
-        </div>
+          </section>
 
-    </div>
-</div>
+          <section class="questions">
+            <div class="container-fluid questions__backimg">
+              <div class="row h-100">
+                <div class="col-7 d-flex align-items-center ml-5">
+                  <div class="row">
+                    <div class="col-12 questions__content">
+                      <h1>Еще остались вопросы?</h1>
+                      Наши специалисты проведут для вас консультацию и у вас не
+                      останется никаких возражений
+      
+                      <div class="questions__formcont">
+                        <div class="questions__form mt-4 p-5">
+                          <div class="questions__text-block"></div>
+      
+                          <form >
+                            <div class="form-group label-input">
+                              <label for="name">Ваше имя</label>
+                              <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Николай"
+                              />
+                            </div>
+                            <div class="form-group label-input">
+                              <label for="phone">Телефон</label>
+                              <input
+                                type="text"
+                                name="phone"
+                                id="phone"
+                                placeholder="+7 (900) 777-88-99"
+                              />
+                            </div>
+                            <button class="btn custom-button">Оставить заявку</button>
+                          </form>
+                          <div class="questions__confidential">
+                            Оставляя заявку вы соглашаетесь с
+                            <a>политикой конфиденциальности</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
       </main>
-    </div>
   </body>
 </html>
